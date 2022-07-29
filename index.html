@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;300;600&family=Roboto+Mono&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>   
+<link rel="stylesheet" href="./css/style.css">
+    <title>Staart</title>
+  </head>
+  <body>
+
+    <div class="container-principal">
+      <!-- Container da esquerda -->
+   <div class="container centralizar">
+    <!-- aplicar divs para animação -->
+    <div class="principal">
+      <h1 class="principal-logo"><span><ion-icon class="raio" name="flash-outline"></ion-icon>
+      </span> FLASH</h1>
+    <h2 class="principal-titulo">Aprenda de forma rápida simples e divertida o vocabulário técnico </h2>
+    <p class="principal-descricao">No cartão você encontrará palavras e expressões que irá utilizar no seu dia a 
+        dia como dev. Aproveite para testar seus conhecimentos e fixar o significado.</p>
+        <div class="botoes">
+          <button onclick="buscarInformação()" class="ativo botao">Próxima pergunta</button>
+          <button onclick="revelarResposta()" class="botao">Revelar resposta</button>
+        </div>
+    </div>
+   </div>
+
+   <div id="cardContainer" class="container centralizar">
+    
+    </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script src="./js/app.js"></script>
+  </body>
+</html>

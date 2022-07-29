@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* preparar a aplicação para trabalhar com tamahanhos relativos
+rem. (Toda página por padrão tem 16px - 0.16rem
+*/
+html {
+  font-size: 62.5%;
+}
+
+:root{
+    --buton-color: blueviolet;
+}
+
+body {
+  background: #000000;
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background-image: url("../img/blur-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: fixed;
+}
+
+h1 {
+  padding: 8px;
+}
+
+.container-principal {
+  background-image: url(../img/blur-1.png);
+  background-attachment: fixed;
+  background-size: 100%;
+  display: flex;
+  height: 100vh;
+}
+
+.raio{
+  color: blueviolet;
+  font-size: 5rem;
+}
+
+span{
+margin-left: -1.9rem;
+}
+
+.container {
+  width: 50%;
+}
+
+.centralizar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.principal {
+  padding: 7rem;
+}
+
+.principal-logo {
+  font-size: 6rem;
+}
+
+.principal-titulo {
+  font-size: 3rem;
+}
+
+.principal-descricao {
+  margin: 3rem 0;
+}
+
+.botao {
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 100%;
+  height: 6rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background: none;
+  border: 1px solid var(--buton-color);
+  color: white;
+}
+
+.ativo {
+  background: var(--buton-color);
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.card {
+  background: white;
+  width: 90%;
+  max-width: 60rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-cabecalho {
+  background: var(--buton-color);
+  height: 24rem;
+}
+
+.card-conteudo {
+    color: black;
+    padding: 3rem 1.5rem;
+    min-height: 14rem;
+
+}
+
+
+.card-titulo {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.blur{
+    filter: blur(5px);
+}
+
+
+@media (max-width:700px){
+    .container-principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+      }
+
+      .botao {
+        font-size: 1.6rem;
+        font-weight: 700;
+        width: 100%;
+        height: 6rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        background: none;
+        border: 1px solid var(--buton-color);
+        color: white;
+      }
+
+      .card {
+        background: white;
+        width: 100%;
+        max-width: 60rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
+      
+}
+
+/* ======================TRASITION WRITING=============== */
+/* <div class="text middle">
+      <span class="hidden">A</span>
+      <span class="hidden">s</span>
+      <span class="hidden">k</span>
+      <span class="hidden">s</span>
+      
+      <span class="hidden">A</span>
+      <span class="hidden">n</span>
+      <span class="hidden">s</span>
+      <span class="hidden">w</span>
+      <span class="hidden">e</span>
+      <span class="hidden">r</span>
+      <span class="hidden">s</span> */
+/* .middle{
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.text{
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hidden{
+    max-width: 0;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+
+.text:hover .hidden{
+    opacity: 1;
+    max-width: 1em;
+} */
